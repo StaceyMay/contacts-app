@@ -1,0 +1,25 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$my-color: pink;
+
+.address {
+  color: $my-color;
+}
+
+.number {
+  color: red;
+}
+
+#contact_list {
+  
+  h2 {
+  color:brown;
+
+  }
+}
+
+h1 {
+  color: maroon;
+}
