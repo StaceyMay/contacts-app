@@ -1,0 +1,23 @@
+<div class="center_everything">
+
+<h1> Contacts:</h1>
+
+<div class="well well-lg">Welcome to my little black book >:)</div>
+
+<div id="contact_list"
+<h1>
+    <% @contacts.each do |contact| %>
+    <div class="col-md-4">
+      <div class="jumbotron">
+        <h2><%= contact.name%></h2>
+        <h3 class="address"><%= contact.address%></h3>
+        <h3 class="number"><%= contact.number%></h3>
+      </div>
+    </div>
+    <% end %>
+
+</h1>
+</div>
+</div>
+</div>
+

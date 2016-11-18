@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  get "/", to: "contacts#home"
+  get "/contacts", to: "contacts#index"
 
-  get "/new_contact", to: "contacts#new"
-  post "/saved_contact", to: "contacts#save"
+  get "/contacts/new", to: "contacts#new"
+  post "/contacts", to: "contacts#create"
+
+  get "/contacts/:id/edit", to: "contacts#edit"
+  patch "/contacts/:id", to: "contacts#update"
+
+  get "contacts/:id", to: "contacts#show"
+
+  delete "/contacts/:id", to: "contacts#destroy"
+
 end

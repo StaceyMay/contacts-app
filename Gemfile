@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.3.6'
 # Bootstrap CSS
 
+gem 'faker', '~> 1.6', '>= 1.6.6'
+#faker gem
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

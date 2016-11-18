@@ -1,0 +1,12 @@
+<div class="center_everything"> 
+
+  <h2><%= @contact.name%></h2>
+  <h3><%= @contact.address%></h3>
+  <h3><%= @contact.number%></h3>
+  <%= link_to "Go Back to Contacts", "/contacts"%>
+  <div>
+  <%= link_to "Delete Contact", "/contacts/#{@contact.id}", method: :delete %> 
+  </div>
+
+<h4> Created: <%= @contact.pretty_time%> </h4>
+</div>
