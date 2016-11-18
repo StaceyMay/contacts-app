@@ -1,8 +1,10 @@
 <div class="center_everything"> 
 
   <h2><%= @contact.name%></h2>
+  <h2><%= @contact.middle_name%></h2>
   <h3><%= @contact.address%></h3>
   <h3><%= @contact.number%></h3>
+  <h4><i>"<%= @contact.bio%>"</i></h4>
   <%= link_to "Go Back to Contacts", "/contacts"%>
   <div>
   <%= link_to "Delete Contact", "/contacts/#{@contact.id}", method: :delete %> 

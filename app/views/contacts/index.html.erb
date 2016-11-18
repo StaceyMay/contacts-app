@@ -9,9 +9,10 @@
     <% @contacts.each do |contact| %>
     <div class="col-md-4">
       <div class="jumbotron">
-        <h2><%= contact.name%></h2>
+        <h2><a href="/contacts/<%= contact.id %>"><%= contact.name%></a></h2>
         <h3 class="address"><%= contact.address%></h3>
         <h3 class="number"><%= contact.number%></h3>
+        <i><h3>"<%= contact.bio%>"</h3></i>
       </div>
     </div>
     <% end %>
